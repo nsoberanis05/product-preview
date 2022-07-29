@@ -78,9 +78,13 @@ h1{
 .inline-block{
     display: inline-block;
 }
+@media (max-width: 900px){
+         
  .atc-bttn-container{
     margin-bottom: 1.5rem;
  }
+         
+}
 @media (min-width: 900px){
     .item{
         margin-top: 0.4rem;
