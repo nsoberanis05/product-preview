@@ -1,0 +1,188 @@
+/* General */
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+html{
+    font-family: Be Vietnam Pro, sans-serif;
+    font-size: 16px;
+}
+
+p{
+    margin: 0 ;
+    padding: 0;
+}
+
+@media (min-width: 955px){
+    main, nav{
+        margin: 2.5rem 7rem;
+    }
+}
+
+/* Navigation */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.nav-logo{
+    padding-top: 5px; 
+}
+.nav-bar-ul-container{
+    margin: 0 auto;
+}
+.nav-bar ul{
+    padding: 0;
+    list-style: none;
+}
+.nav-bar ul li{
+    
+    display: inline-block;
+    color: black;
+    font-size: 0.75rem;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    padding: 0 1rem;
+}
+@media (max-width: 954px){
+    .nav-bar ul, #nav-bttn{
+        display: none;
+    }
+    nav{
+        margin-left: 32px;
+    }
+}
+
+/* Buttons */
+
+.button-style{
+    /* font-size: 0.9rem; //this is for navigation example on my website  */
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    border: 0;
+    border-radius: 2em;
+}
+nav button, .top-division button{
+    font-size: 0.9rem;
+}
+.bttn-small{
+    font-size: 1rem;
+    padding: 0.6em 1.4em;
+}
+
+@media (max-width: 954px){
+    /* This is used for button */
+    .flex-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }   
+    .bttn-med{
+        padding: 1em 2.2em;
+        font-size: 1.1em;
+    }
+}
+@media (min-width: 955px){
+    .bttn-med{
+    padding: 1em 2.2em;
+    font-size: 0.9em;
+    }
+}
+/*---------------------------------------*/
+/* Typeography */
+.col1-row1 * + *, .col1-row2 * + *{
+    margin-top: 2rem;
+}
+.big-h{
+    font-size: 3.1rem;
+}
+.med-h{
+    font-size: 2.3rem;
+}
+.bold{
+    font-weight: 700;
+}
+.gray-text-margin{
+    margin-top: 20px;
+}
+.center{
+    text-align: center;
+}
+
+@media (max-width: 954px){
+    h1, .med-p{
+        text-align: center;
+    }
+    .col1-row1 p, .col1-row2 p{
+        max-width: 30ch;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .med-p{
+        line-height: 1.9em;
+    }
+    .gray-p{
+        font-size: 1.4rem;
+        color: hsl(227, 12%, 61%);
+    }
+    .gray-text-margin{
+        line-height: 2em;
+    }
+}
+@media (min-width: 955px){
+    .med-p{
+        max-width: 33ch;
+    }
+    .gray-p{
+        line-height: 1.5em;
+        font-size: 1rem;
+        color: hsl(227, 12%, 61%);
+    }
+    .col1-row1 p,.col1-row2 p{
+        line-height: 1.6em;
+    }
+}
+
+/* Main */
+.col1-row1{
+    margin-top: 50px;
+}
+.col1-row1 h1,.col1-row2 h1{
+    margin: 0;
+}
+.top-image{
+    width: 100%;
+}
+.col2-row2{
+    display: flex;
+    flex-direction: column;
+}
+.col2-row2 p{
+    font-size: 1rem;
+    padding-left: 1.25rem;
+}
+.gray-text-header{
+    padding-top: 0.5em;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.75rem;
+}
+@media (min-width: 955px) {
+    .top-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 100px;
+        margin-top: 125px;
+    }
+}
+@media (max-width: 954px) {
+   .col1-row1, .col2-row1, .col1-row2{
+    margin-bottom: 4rem;
+   }
+}
