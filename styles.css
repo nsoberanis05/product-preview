@@ -158,7 +158,7 @@ h1{
     background-color: white;
 }
 @media (min-width: 900px){
-    .container{
+    .main-container{
         display: flex;
         flex-direction: row;
         margin: auto;
