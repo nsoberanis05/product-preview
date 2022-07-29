@@ -1,0 +1,188 @@
+
+/*----------------------- 
+         General
+--------------------------*/
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: hsl(30, 38%, 92%);
+    height: 800px;
+
+}
+p{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+/*----------------------- 
+--------------------------*/
+
+/*----------------------- 
+         Typeography
+--------------------------*/
+
+ .item-gray-text{
+     font-family: 'Montserrat', sans-serif;
+     color: hsl(228, 12%, 48%);
+     line-height: 1.75em;
+ }
+.price{
+    color: hsl(158, 36%, 37%);
+}
+.bttn-text{
+    text-align: center;
+    margin-left: 1em;
+}
+@media (min-width: 900px){
+    h1{
+        font-size: 2.75rem;
+        line-height: 1em;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+/*----------------------- 
+--------------------------*/
+
+/*----------------------- 
+    Spacing, Displays
+--------------------------*/
+
+.item-description > *, .flex, .atc-bttn-container{
+    margin: 1.5rem 1.5rem 0px 1.5rem;
+}
+.reduced-price{
+    margin-left: 1rem;
+    text-decoration: line-through;
+}
+.atc-bttn p{
+  margin: 0 0.5em;
+}
+.attribution{
+    margin-top: 1em;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inline-block{
+    display: inline-block;
+}
+@media (min-width: 900px){
+    .item{
+        margin-top: 0.4rem;
+    }
+    .item-description > *, .flex, .atc-bttn-container{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .item-description{
+        margin-top: 2rem;
+    }
+    .item-gray-text{
+        font-size: 16px;
+    }
+    .item-name{
+        width: 11ch;
+    }
+    .atc-bttn-container{
+        margin-top: 3rem;
+    }
+    .flex{
+        margin-top: 2.75rem;
+    }
+}
+@media (max-width: 900px){
+    .atc-bttn-container{
+        margin-bottom: 1.5rem;
+    }
+}
+/*----------------------- 
+--------------------------*/
+
+/*----------------------- 
+         Buttons
+
+    atc = add to cart 
+--------------------------*/
+
+.atc-bttn{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 1em;
+    border:0;
+    padding: 1.5em;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding-right: 1em;
+    cursor: pointer;
+}
+/*----------------------- 
+--------------------------*/
+
+/*----------------------- 
+      Images, Icons
+--------------------------*/
+
+.image-container{
+    width: 100%;
+}
+.mobile-image{
+    width: 100%;
+}
+.icon-cart{
+    vertical-align: bottom;
+}
+/*----------------------- 
+--------------------------*/
+
+/*----------------------- 
+         Main
+--------------------------*/
+
+.container{
+    margin: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: white;
+}
+@media (min-width: 900px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        background-color: white;
+        width: 800px;
+    }
+    .image-container, .item{
+        width: 50%;
+    }
+    .desktop-image{
+        width: 100%;
+        vertical-align: bottom;
+    }
+    .mobile-image{
+        display: none;
+    }
+}
+@media (max-width: 900px){
+    .desktop-image{
+        display: none;
+    }
+}
+/*----------------------- 
+--------------------------*/
