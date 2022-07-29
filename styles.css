@@ -149,7 +149,7 @@ h1{
          Main
 --------------------------*/
 
-.container{
+.main-container{
     margin: auto;
     border-radius: 0.5rem;
     overflow: hidden;
