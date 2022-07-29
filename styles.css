@@ -152,7 +152,7 @@ h1{
          Main
 --------------------------*/
 
-.container{
+.main-container{
     margin: auto;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -166,7 +166,7 @@ h1{
         border-radius: 0.5rem;
         overflow: hidden;
         background-color: white;
-        width: 800px;
+        width: 750px;
     }
     .image-container, .item{
         width: 50%;
